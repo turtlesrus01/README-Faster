@@ -16,7 +16,7 @@ inquirer
     console.log(response);
 
     //README template as variable
-    const readMeTxt = `# ${Title}
+    const readMeTxt = `# ${response.title}
 
     ## Subtitle 
 
@@ -28,7 +28,7 @@ inquirer
     
     ![photo of website]()
     
-    The deployed website can be reached at this link: https://turtlesrus01.github.io/horiseon-solutions/
+    The deployed website can be reached at this link: 
     
     ## Support
     Reach out to me if you have any questions or if you have questions at:
