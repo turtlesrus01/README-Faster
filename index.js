@@ -49,7 +49,7 @@ inquirer
       {
         type: 'choice',
         message: 'What license have you chosen for your application?',
-        name: 'usage',
+        name: 'license',
       },])
   //User entry response handler
   .then(response => {
@@ -78,7 +78,7 @@ or
 [My GitHub page](${response.profile})
 
 ## License
-[MIT]()`;
+${response.license}`;
   //Create README file in root
   fs.writeFile('README-Faster.md',readMeTxt, (err) => {
     if (err) {
