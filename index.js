@@ -33,22 +33,22 @@ inquirer
       },
       {
         type: 'input',
-        message: 'Please describe how your application can be used.',
-        name: 'usage',
+        message: 'Submit a link to your deployed application.',
+        name: 'link',
+      },
+      {
+        type: 'confirm',
+        message: 'Does your application have a GitHub Discussions page?',
+        name: 'discussions',
       },
       {
         type: 'input',
-        message: 'Please describe how your application can be used.',
-        name: 'usage',
+        message: 'Please include a link to your GitHub profile.',
+        name: 'profile',
       },
       {
-        type: 'input',
-        message: 'Please describe how your application can be used.',
-        name: 'usage',
-      },
-      {
-        type: 'input',
-        message: 'Please describe how your application can be used.',
+        type: 'choice',
+        message: 'What license have you chosen for your application?',
         name: 'usage',
       },])
   //User entry response handler
@@ -66,16 +66,16 @@ ${response.description}
 ${response.usage}
 ## Here is an image of the finished site:
 
-![photo of website]()
+![photo of website](${response.image})
 
-The deployed website can be reached at this link: 
+The deployed website can be reached at this link: ${response.link}
 
 ## Support
 Reach out to me if you have any questions or if you have questions at:
 
-[GitHub discussions]()
+[GitHub discussions](${response.discussions})
 or
-[My GitHub page]()
+[My GitHub page](${response.profile})
 
 ## License
 [MIT]()`;
