@@ -20,6 +20,8 @@ Requires Inquirer 8.2.4 You can initialize this application with Node.js. Once i
 
 Once installed and started you will be asked basic questions about your application, once finished the output file will be called README-Faster.md. Once found, you can rename your file and that is your finished README file.
 
+Example Video:  <a href="https://drive.google.com/file/d/1aLw2BVMAH3WPfDEbgXbwJsoFfZTvIZq5/view?usp=sharing">Video</h2>
+
 <h2 id="License">License</h2>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) This application is registered under the MIT License.
