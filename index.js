@@ -70,7 +70,8 @@ inquirer
 
     //README template literal string as variable
     const readMeTxt = `# ${response.title} ${licenseImg()}
-## Description {#Description}
+<h2 id="Description">Description</h2>
+
 ${response.description}
 ## Table of Contents 
 [Description](#Description)
@@ -80,17 +81,29 @@ ${response.description}
 [Contributing Guidelines](#Contributing)
 [Tests](#Tests)
 [Questions](#Questions)
-## Installation {#Installation}
+
+<a href="Installation">Installation</a>
+
 ${response.installation}
-## Usage {#Usage}
+
+<h2 id="Usage">Usage</h2>
+
 ${response.usage}
-## License {#License}
+
+<h2 id="License">License</h2>
+
 ${licenseImg()} This application is registered under the ${response.license}.
-## Contributing Guidelines {#Contributing}
+
+<h2 id="Contributing">Contributing Guidelines</h2>
+
 ${response.contribution}
-## Test instructions
+
+<h2 id="Tests">Test instructions</h2>
+
 ${response.tests}
-## Questions {#Questions}
+
+<h2 id="License">License</h2>
+
 Reach out to me if you have any questions at:
 
 [My GitHub page](https://github.com/${response.profile})
