@@ -1,23 +1,36 @@
-# Yes
+# YEs
 
-## Subtitle 
-YEs please
-## Description
-Its very good
-## Usage 
-It can be uysed like this
-## Here is an image of the finished site:
+## Description {#Description}
+Yesiery
 
-![photo of website](https://imgs.search.brave.com/gIU_-nlQiGylwuD1C8x2LaZ70TRuDYDhbbWZyUa5pHA/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/YnV5c25pcC5jb20v/VXBwZXItUm9sbGVy/LUdlYXItRm9yLVND/WC00NTIxRlMtMDEu/anBn)
+## Table of Contents 
+[Description](#Description)
+[Installation](#Installation)
+[Usage](#Usage)
+[License](#License)
+[Contributing Guidelines](#Contributing)
+[Tests](#Tests)
+[Questions](#Questions)
 
-The deployed website can be reached at this link: https://github.com/turtlesrus01/README-Faster
+## Installation {#Installation}
+You install it like this
 
-## Support
-Reach out to me if you have any questions or if you have questions at:
+## Usage {#Usage}
+used easily
 
-[GitHub discussions](false)
-or
+## License {#License}
+This application is registered under the MIT license.
+
+## Contributing Guidelines {#Contributing}
+MIT
+
+## Test instructions
+Test kindly
+
+## Questions {#Questions}
+Reach out to me if you have any questions at:
+
 [My GitHub page](https://github.com/turtlesrus01)
+or
+[My email](stefan.palacios@gmail.com)
 
-## License
-[MIT]()

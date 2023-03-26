@@ -13,13 +13,13 @@ inquirer
       },
       {
         type: 'input',
-        message: 'One sentence of about your application?',
-        name: 'subtitle',
+        message: 'Please write a description of your application.',
+        name: 'description',
       },
       {
         type: 'input',
-        message: 'Please write a description of your application.',
-        name: 'description',
+        message: 'Please write installation instructions.',
+        name: 'installation',
       },
       {
         type: 'input',
@@ -27,29 +27,29 @@ inquirer
         name: 'usage',
       },
       {
-        type: 'input',
-        message: 'Please link an image of your application.',
-        name: 'image',
-      },
-      {
-        type: 'input',
-        message: 'Submit a link to your deployed application.',
-        name: 'link',
-      },
-      {
-        type: 'confirm',
-        message: 'Does your application have a GitHub Discussions page?',
-        name: 'discussions',
-      },
-      {
-        type: 'input',
-        message: 'Please include a link to your GitHub profile.',
-        name: 'profile',
-      },
-      {
         type: 'choice',
         message: 'What license have you chosen for your application?',
         name: 'license',
+      },
+      {
+        type: 'input',
+        message: 'What are your contribution guidelines?',
+        name: 'contribution',
+      },
+      {
+        type: 'input',
+        message: 'What are your test instructions?',
+        name: 'tests',
+      },
+      {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'profile',
+      },
+      {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
       },])
   //User entry response handler
   .then(response => {
@@ -58,27 +58,41 @@ inquirer
     //README template as variable
     const readMeTxt = `# ${response.title}
 
-## Subtitle 
-${response.subtitle}
-## Description
+## Description {#Description}
 ${response.description}
-## Usage 
+
+## Table of Contents 
+[Description](#Description)
+[Installation](#Installation)
+[Usage](#Usage)
+[License](#License)
+[Contributing Guidelines](#Contributing)
+[Tests](#Tests)
+[Questions](#Questions)
+
+## Installation {#Installation}
+${response.installation}
+
+## Usage {#Usage}
 ${response.usage}
-## Here is an image of the finished site:
 
-![photo of website](${response.image})
+## License {#License}
+This application is registered under the ${response.license} license.
 
-The deployed website can be reached at this link: ${response.link}
+## Contributing Guidelines {#Contributing}
+${response.contribution}
 
-## Support
-Reach out to me if you have any questions or if you have questions at:
+## Test instructions
+${response.tests}
 
-[GitHub discussions](${response.discussions})
+## Questions {#Questions}
+Reach out to me if you have any questions at:
+
+[My GitHub page](https://github.com/${response.profile})
 or
-[My GitHub page](${response.profile})
+[My email](${response.email})
 
-## License
-${response.license}`;
+`;
   //Create README file in root
   fs.writeFile('README-Faster.md',readMeTxt, (err) => {
     if (err) {
