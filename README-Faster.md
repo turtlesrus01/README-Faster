@@ -1,7 +1,7 @@
-# YEs
+# 1
 
 ## Description {#Description}
-Yesiery
+1
 
 ## Table of Contents 
 [Description](#Description)
@@ -13,24 +13,24 @@ Yesiery
 [Questions](#Questions)
 
 ## Installation {#Installation}
-You install it like this
+1
 
 ## Usage {#Usage}
-used easily
+1
 
 ## License {#License}
-This application is registered under the MIT license.
+This application is registered under the MIT License license.
 
 ## Contributing Guidelines {#Contributing}
-MIT
+1
 
 ## Test instructions
-Test kindly
+1
 
 ## Questions {#Questions}
 Reach out to me if you have any questions at:
 
-[My GitHub page](https://github.com/turtlesrus01)
+[My GitHub page](https://github.com/1)
 or
-[My email](stefan.palacios@gmail.com)
+[My email](1)
 
