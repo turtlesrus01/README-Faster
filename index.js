@@ -82,7 +82,7 @@ ${response.description}
 [Tests](#Tests)
 [Questions](#Questions)
 
-<a href="Installation">Installation</a>
+<h2 id="Installation">Installation</h2>
 
 ${response.installation}
 
